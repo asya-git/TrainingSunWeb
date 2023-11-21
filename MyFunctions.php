@@ -11,7 +11,7 @@ function showFibonacciNumbers(int $rowLenth)
         ]);
     }
 
-    for ($i = 0; $i <= $rowLenth; $i++) {
+    for ($i = 0; $i < $rowLenth; $i++) {
         if (count($result)>1) {
             $result[$i] = $result[$i - 1] + $result[$i - 2];
         } else {
