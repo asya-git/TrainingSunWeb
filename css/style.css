@@ -32,19 +32,42 @@
     margin: 0;
     background-color: transparent;
     border: 0;
+
+    /* max-width: 390px; */
 }
 
 .header {
+    min-width: 390px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
 
     background-color: #fff;
 }
 
+.header-panel {
+    display: none;
+}
+.header-nav {
+    display: none;
+}
+
+.text {
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "RF Dewi", sans-serif;
+}
+
+
 .connection {
+    margin: 6px 0 6px 16px;
+    /* margin-left: 16px; */
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -66,6 +89,7 @@
     text-transform: uppercase;
     color: #000;
     font-family: "RF Dewi", sans-serif;
+
     
 }
 .connection__button-call {
@@ -81,6 +105,8 @@
 }
 
 .burger-button {
+    margin: 6px 0 6px 16px;
+
     width: 34px;
     height: 34px;
     border: 2px #B8B8B8 solid;
@@ -91,15 +117,21 @@
 }
 
 .main {
-    width: 390px;
-
+    min-width: 390px;
+    width: 100%;
 }
+
 
 .section {
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    padding: 32px 16px;
+
+    /* padding: 32px 16px; */
+    /* margin: 0 10%; */
+    margin-bottom: 24px;
+
+    /* max-width: 390px; */
 }
 .section_background-color-black {
     background-color: #161515;
@@ -108,10 +140,16 @@
 
 .contacts {
     height: 406px;
-    width: 358px;
+    /* width: 358px; */
+
+    margin: 0 10%;
+    /* margin: 0 16px; */
+    padding: 32px 0 32px 0;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* align-items: center; */
 }
 .contacts__h1 {
     font-size: 34px;
@@ -122,11 +160,18 @@
     font-family: "RF Dewi Expanded", sans-serif;
 }
 
-/* .office {
+.employees {
+    width: 100%;
+    margin: 64px 0 0 40px;
+    /* overflow-x: auto; */
+}
+
+.office {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-} */
+    margin-bottom: 32px;
+}
 .office__h5 {
     font-size: 18px;
     line-height: 21.6px;
@@ -152,6 +197,7 @@
 
 .empoyee {
     height: auto;
+
 }
 .employee__h2 {
     font-size: 24px;
@@ -166,19 +212,23 @@
 .employee__list {
     list-style-type: none;
 }
-.employee__group {
-    height: 416px;
+.employee-group {
+    /* height: 416px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 16px;
+
 }
 .employee__item {
     
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
+    padding-bottom: 16px;
 }
 .employee__description {
+    margin-left: 20px;
     height: 68px;
     width: 176px;
     text-align: justify;
@@ -196,4 +246,266 @@
     color: #E63E35;
     font-weight: 400;
     font-family: "RF Dewi", sans-serif;
+}
+
+.description {
+    margin: 0 5% 0 5%;
+}
+.description__h5 {
+    margin: 0 5% 0 5%;
+
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #5D5D5D;
+    font-weight: 800;
+    font-family: "RF Dewi Expanded", sans-serif;
+}
+.description__text {
+    /* margin: 0 5% 0 5%; */
+    color: #5D5D5D;
+}
+
+/*FOOTER*/
+.footer{
+    padding: 32px 0;
+    background-color: #161515;
+    /* background-image: url(../img/header/logo.svg); */
+    width: 100%;
+}
+
+.form {
+    margin: 0 5% 0 5%;
+}
+.form-text {
+    padding-top: 32px;
+}
+.form-text__h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-family: "RF Dewi Expanded", sans-serif;
+    text-transform: uppercase;
+}
+.form-text__text {
+    color: #FFFFFF;
+}
+.form-input {
+    /* height: 134px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.form-input-groups {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+
+}
+.form-input__input {
+    /* width: 100%; */
+
+    border: 2px #B8B8B8 solid;
+    background-color: #FFF;
+    height: 34px;
+    margin-bottom: 10px;
+
+    /* padding-left: 16px; */
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #5D5D5D;
+    font-weight: 400;
+    font-family: "RF Dewi", sans-serif;
+}
+.form__button {
+    /* margin: 24px 0; */
+    width: 100%;
+    background-color: #B8B8B8;
+    height: 36px;
+
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "RF Dewi", sans-serif;
+
+}
+.form__conditions-text {
+    line-height: 16.8px;
+    font-size: 14px;
+    color: #5D5D5D;
+}
+.form__conditions-a {
+    color: #E63E35;
+}
+
+.footer-contacts {
+    height: 124px;
+    margin-top: 64px;
+    margin-bottom: 62px;
+    margin-right: 16px;
+}
+.footer-contacts__text {
+    text-align: right;
+    color: #5D5D5D;
+}
+.footer-contacts__text_red {
+    color: red;
+}
+
+/* .header-nav {
+    
+} */
+.header-list {
+    display: flex;
+
+}
+
+@media (min-width: 1600px) {
+    .connection { display: none;}
+    .burger-button { display: none;}
+    .header { 
+        /* min-width: 1600px; */
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        /* padding: 15px 160px; */
+    }
+    .header-panel {
+
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0 15px 160px;
+
+        /* padding: 15px 160px; */
+        /* flex-direction: column; */
+    }
+    .header-logo {
+        
+        /* margin-left: 160px; */
+        /* width: 326px;
+        height: 50px; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-logo__text {
+        font-size: 31.2px;
+        line-height: 37.44px;
+        color: #2C2B2E;
+        font-weight: 800;
+        font-family: "RF Dewi Expanded", sans-serif;
+        text-transform: uppercase;
+    }
+    .header-contacts {
+        margin-right: 160px;
+        width: 498px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-contacts__button {
+        border: 2px #000000 solid;
+        padding: 16px;
+
+        color: #000000;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+        font-family: "RF Dewi", sans-serif;
+    }
+
+    .header-number {
+        height: 46px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .header-number__number {
+        font-size: 24px;
+        line-height: 18.8px;
+        color: #E63E35;
+        font-weight: 800;
+        font-family: "RF Dewi Expanded", sans-serif;
+        text-transform: uppercase;
+    }
+    .header-number__text {
+        color: #000000;
+        font-size: 13px;
+        line-height: 15.6px;
+        font-weight: 400;
+        font-family: "RF Dewi", sans-serif;
+        text-align: right;
+
+    }
+
+    .header-nav {
+        width: 100%;
+        display: flex;
+        background-color: #161515;
+        justify-content: right;
+        border: 1px #161515 solid;
+        /* margin: 15px 160px 15px 0; */
+    }
+    .header-list {
+        list-style-type: none;
+        margin-right: 160px;
+    }
+    .header-list__button {
+        color: #B8B8B8;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+        font-family: "RF Dewi", sans-serif;
+        padding: 16px;
+    }
+
+    .main {
+        min-width: 1600px;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .about-us {
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .employee__list {
+        display: flex;
+        flex-direction: row;
+    }
+    /* .employee-group {
+    } */
+
+    .description__text {
+        margin: 0 5% 0 5%;
+    }
+
+    .form {
+        width: 623px;
+    }
+    .form-input-groups {
+        display: flex;
+        flex-direction: row;
+    }
+    .form-input__input_maggin-r-15px {
+        margin-right: 15px;
+    }
+    .footer-contacts {
+        margin-right: 160px;
+    }
 }
