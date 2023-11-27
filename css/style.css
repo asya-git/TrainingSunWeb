@@ -1,0 +1,80 @@
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    list-style-type: none;
+}
+
+/* HEADER------------------------------------------------------------ */
+.header {
+    min-width: 1440px;
+    padding: 26px 0 26px 0;
+    background-color: #1A1A1A;
+    opacity: 65%;
+
+    display: flex;
+    font-display: row;
+
+    align-items: center;
+}
+
+/* LOGO----------------------------------------------------------- */
+.header__logo {
+    margin-left: 140px;
+}
+.header__text {
+    font-size: 12px;
+
+    color: #F6F6F6;
+    opacity: 50%;
+}
+
+/* НАВИГАЦИЯ------------------------------------------------------- */
+.header__nav {
+    margin-left: 40px;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.menu_link {
+    font-size: 16px;
+
+    color: #FFF;
+}
+
+/* КОНТАКТЫ-------------------------------------------------------- */
+.header__contacts {
+    margin: 0 140px 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+}
+.header__phone {
+    font-size: 16px;
+
+    color: #FFF;
+}
+.header__button {
+    width: 160px;
+    height: 32px;
+    
+    font-size: 12px;
+    border: 1px #F79C1B solid;
+    color: #F79C1B;
+}
+
+/* MAIN-------------------------------------------------------------- */
+.main {
+    min-width: 1440px;
+    background-color: rgb(107, 83, 53);
+}
