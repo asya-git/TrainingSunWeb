@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600&display=swap');
+
+
 * {
 	outline: 0;
 	padding: 0;
@@ -9,6 +13,13 @@
     list-style-type: none;
 }
 
+.header-wrapper {
+    width: 100%;
+    height: 718px;
+
+    background-image: url("../img/background.png");
+}
+
 /* HEADER------------------------------------------------------------ */
 .header {
     min-width: 1440px;
@@ -18,6 +29,8 @@
 
     display: flex;
     font-display: row;
+    position: sticky;
+    top: 0;
 
     align-items: center;
 }
@@ -27,6 +40,9 @@
     margin-left: 140px;
 }
 .header__text {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
     font-size: 12px;
 
     color: #F6F6F6;
@@ -45,6 +61,9 @@
 }
 .menu_link {
     font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
 
     color: #FFF;
 }
@@ -60,6 +79,9 @@
 
 }
 .header__phone {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
     font-size: 16px;
 
     color: #FFF;
@@ -68,13 +90,87 @@
     width: 160px;
     height: 32px;
     
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
     font-size: 12px;
+
     border: 1px #F79C1B solid;
     color: #F79C1B;
+}
+
+/* ЗАЯВКА------------------------------------------------------------ */
+.wrapper-application {
+    width: 100%;
+    height: 613px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 47px;
+
+    /* background-color: #1A1A1A; */
+}
+
+.application {
+    padding: 32px;
+    width: 696px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: rgba(26, 26, 26, 0.65);
+
+}
+.application__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600; 
+    font-size: 46px;
+
+    color: #FFF;
+
+    text-align: center;
+}
+.application__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 20px;
+
+    color: #FFF;
+}
+.application__info {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 18px;
+
+    color: #FFF;
+}
+
+.button {
+    background-color: #F79C1B;
+    border: 1px #F79C1B solid;
+    padding: 10px 51px;
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 16px;
+
+    color: #FFF;
 }
 
 /* MAIN-------------------------------------------------------------- */
 .main {
     min-width: 1440px;
-    background-color: rgb(107, 83, 53);
 }
+
+
