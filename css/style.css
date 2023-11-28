@@ -13,9 +13,13 @@
     list-style-type: none;
 }
 
+.body {
+    min-width: 1440px
+}
+
 .header-wrapper {
     width: 100%;
-    height: 718px;
+    /* height: 718px; */
 
     background-image: url("../img/background.png");
 }
@@ -68,6 +72,11 @@
     color: #FFF;
 }
 
+.menu_link:hover {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
 /* КОНТАКТЫ-------------------------------------------------------- */
 .header__contacts {
     margin: 0 140px 0 auto;
@@ -87,6 +96,8 @@
     color: #FFF;
 }
 .header__button {
+    transition: 1.5s;
+
     width: 160px;
     height: 32px;
     
@@ -97,6 +108,14 @@
 
     border: 1px #F79C1B solid;
     color: #F79C1B;
+}
+
+.header__button:hover {
+    color: #FFF;
+    background-color: #F79C1B;
+}
+.header__phone:hover {
+    text-decoration: underline;
 }
 
 /* ЗАЯВКА------------------------------------------------------------ */
@@ -154,6 +173,8 @@
 }
 
 .button {
+    transition: 1.5s;
+
     background-color: #F79C1B;
     border: 1px #F79C1B solid;
     padding: 10px 51px;
@@ -164,6 +185,11 @@
     font-size: 16px;
 
     color: #FFF;
+}
+.button:hover {
+    color: #F79C1B;
+    background-color: #FFF;
+
 }
 
 /* MAIN-------------------------------------------------------------- */
@@ -196,8 +222,6 @@
     color: #1A1A1A;
 }
 .examples-items {
-    /* margin: 0 140px 0 140px; */
-
     flex-wrap: wrap;
 
     display: flex;
@@ -231,6 +255,18 @@
     line-height: 26px;
 
     color: #1A1A1A;
+}
+
+.wrapper-img {
+    overflow: hidden;
+}
+
+.item__img {
+    transition: 1.3s;
+}
+
+.item__img:hover {
+    transform: scale(103%);
 }
 
 /* ФОРМА------------------------------------------------------- */
@@ -351,5 +387,63 @@
     padding: 8px 0;
     margin: 50px 180px 0 180px;
     width: 230px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 160px 0 160px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 140px;
+}
+.footer_title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 40px;
+
+    color: #1A1A1A;
+}
+
+.offres-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    /* align-items: center; */
+}
+.offres-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    width: 30%;
+
+}
+.offres-item__icon {
+    margin-bottom: 24px;
+
+    width: 60px;
+    height: 60px;
+}
+.offres-item__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 24px;
+
+    color: #1A1A1A;
+}
+.offres-item__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #1A1A1A;
 }
 
