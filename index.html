@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,43 +8,55 @@
 </head>
 <body class="body">
     <div class="header-wrapper">
-        <!-- HEADER -->
-        <header class="header">
-            <!-- 1440 -->
-            <div class="header__logo">
-                <img height="37" width="180" class="header__image" src="img/header/logo.png" alt="лого">
-                <p class="header__text">Центр мебельных технологий</p>
-            </div>
-            <nav class="header__nav">
-                <ul class="menu_list">
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">Шкафы-купе</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">Торговая мебель</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">Кухни</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__contacts">
-                <a href="tel:+7345254-70-78" class="header__phone">+7 3452 54-70-78</a>
-                <button class="header__button">Оставить заявку</button>
-            </div>
-        </header>
+        <div class="wrapper-background">
+            <!-- HEADER -->
+            <header class="header">
+                <!-- 1440 -->
+                <div class="header__logo">
+                    <img height="37" width="180" class="header__image" src="img/header/logo.png" alt="лого">
+                    <p class="header__text">Центр мебельных технологий</p>
+                </div>
+                <nav class="header__nav">
+                    <ul class="menu_list">
+                        <li class="menu_item">
+                            <a href="#" class="menu_link">Шкафы-купе</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_link">Торговая мебель</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_link">Кухни</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <a href="tel:+7345254-70-78" class="header__phone">+7 3452 54-70-78</a>
+                    <button class="header__button">Оставить заявку</button>
+                </div>
 
-        <!-- ЗАЯВКА -->
-        <div class="wrapper-application">
-            <div class="application">
-                <h1 class="application__title">Заказывайте кухню от производителя</h1>
-                <p class="application__description">Высокое качество, профессиональный подход и креативные решения</p>
-                <p class="application__info">Работаем по Тюмени и Тюменской области</p>
+                <button class="header_burger-button">
+                    <img src="" alt="" class="burger-button_img">
+                    <svg class="burger-button_icon" xmlns="http://www.w3.org/2000/svg" width="30" height="15" viewBox="0 0 30 15" fill="none">
+                        <rect width="30" height="1" fill="#FBFBFB"/>
+                        <rect y="7" width="30" height="1" fill="#FBFBFB"/>
+                        <rect y="14" width="30" height="1" fill="#FBFBFB"/>
+                      </svg>
+                </button>
+
+            </header>
+
+            <!-- ЗАЯВКА -->
+            <div class="wrapper-application">
+                <div class="application">
+                    <h1 class="application__title">Заказывайте кухню от производителя</h1>
+                    <p class="application__description">Высокое качество, профессиональный подход и креативные решения</p>
+                    <p class="application__info">Работаем по Тюмени и Тюменской области</p>
+                </div>
+                <button class="button">Оставить заявку</button>
             </div>
-            <button class="button">Оставить заявку</button>
         </div>
 
     </div>
@@ -104,16 +116,16 @@
                 </li>
             </ul>
             <ul class="examples-items">
-                <li class="item item_width-560px">
+                <li class="item item_width-560px item_width-300px">
                     <div class="wrapper-img">
-                        <img width="560" height="340" src="img/items-img/kitchen-styles/provence.png" alt="пример стиля Прованс" class="item__img">
+                        <img src="img/items-img/kitchen-styles/provence.png" alt="пример стиля Прованс" class="item__img">
                     </div>
                     <h3 class="item__title">Прованс</h3>
                     <p class="item__description">Этот стиль порадует истинного ценителя провинциального французского интерьера, привнеся нотки деревенского шарма, сохранив при этом изящность французского дома</p>
                 </li>
-                <li class="item item_width-560px">
+                <li class="item item_width-560px item_width-300px">
                     <div class="wrapper-img">
-                        <img width="560" height="340" src="img/items-img/kitchen-styles/japanese-style.png" alt="пример Японского стиля" class="item__img">
+                        <img src="img/items-img/kitchen-styles/japanese-style.png" alt="пример Японского стиля" class="item__img">
                     </div>
                     <h3 class="item__title">Японский стиль</h3>
                     <p class="item__description">Это разновидность этнических направлений в минимализме, в которой присутствуют безукоризненные цветовые комбинации и лаконичность форм в сочетании с нестандартными решениями в оформлении</p>
@@ -189,8 +201,10 @@
 
         <!-- ИНФО-БЛОК -->
         <ul class="info-items">
-            <li class="info-item">
-                <img src="img/info/about-kitchens.png" alt="фото кухни" class="info-item__img">
+            <li class="info-item info-item_background-img1">
+                <div class="wrapper-img">
+                    <img src="img/info/about-kitchens.png" alt="фото кухни" class="info-item__img">
+                </div>
                 <div class="wrapper-info-text">
                     <h2 class="info-item__title">О кухнях</h2>
                     <p class="info-item__discription">Наша компания изготавливает кухни по индивидуальному проекту, что позволит самостоятельно выбрать стиль и цвет каждого изделия.</p>
@@ -198,16 +212,20 @@
                     <button class="button info-item__button">Заказать</button>
                 </div>
             </li>
-            <li class="info-item info-item_flex-direction-row-rev">
-                <img src="img/info/delivery.png" alt="фото доставки" class="info-item__img">
-                <div class="wrapper-info-text">
-                    <h2 class="info-item__title">Доставка</h2>
-                    <p class="info-item__discription">Мы организуем транспортировку вашего заказа, и, при необходимости, наши сотрудники смогут сразу же произвести сборку и установку оборудования.</p>
-                    <p class="info-item__discription">Вы можете быть уверены в том, что все изделия будут перевезены в точном соответствии с установленными правилами перевозки.</p>
+            <li class="info-item info-item_flex-direction-row-rev info-item_background-img2">
+                <div class="wrapper-img">
+                    <img src="img/info/delivery.png" alt="фото доставки" class="info-item__img">
+                </div>
+                <div class="wrapper-info-text wrapper-info-text_backround-white">
+                    <h2 class="info-item__title info-item__title_color-black">Доставка</h2>
+                    <p class="info-item__discription info-item__discription_color-black">Мы организуем транспортировку вашего заказа, и, при необходимости, наши сотрудники смогут сразу же произвести сборку и установку оборудования.</p>
+                    <p class="info-item__discription info-item__discription_color-black">Вы можете быть уверены в том, что все изделия будут перевезены в точном соответствии с установленными правилами перевозки.</p>
                 </div>
             </li>
-            <li class="info-item">
-                <img src="img/info/production.png" alt="фото производства" class="info-item__img">
+            <li class="info-item info-item_background-img3">
+                <div class="wrapper-img">
+                    <img src="img/info/production.png" alt="фото производства" class="info-item__img">
+                </div>
                 <div class="wrapper-info-text">
                     <h2 class="info-item__title">У нас своё производство</h2>
                     <p class="info-item__discription">Компания “Stoff” создана в апреле 2011 года инженером-технологом Дмитрием Николаевичем Важинским, имеет собственное производство и профессиональное оборудование.</p>
@@ -248,7 +266,7 @@
                     <path d="M15 42.6562C15.7767 42.6562 16.4062 42.0267 16.4062 41.25C16.4062 40.4733 15.7767 39.8438 15 39.8438C14.2233 39.8438 13.5938 40.4733 13.5938 41.25C13.5938 42.0267 14.2233 42.6562 15 42.6562Z" fill="#F79C1B"/>
                 </svg>
                 <h3 class="offres-item__title">Подстроимся под бюджет</h3>
-                <p class="offers__description">Для эскиза подберем материалы эконом, стандарт или премиум класса</p>
+                <p class="offres-item__description">Для эскиза подберем материалы эконом, стандарт или премиум класса</p>
             </li>
         </ul>
         <ul class="offres-items">
@@ -263,7 +281,7 @@
                     <path d="M15 42.6562C15.7767 42.6562 16.4062 42.0267 16.4062 41.25C16.4062 40.4733 15.7767 39.8438 15 39.8438C14.2233 39.8438 13.5938 40.4733 13.5938 41.25C13.5938 42.0267 14.2233 42.6562 15 42.6562Z" fill="#F79C1B"/>
                 </svg>
                 <h3 class="offres-item__title">Гарантия 5 лет</h3>
-                <p class="offers__description">Наша компания занимается изготовлением мебели много лет, мы отвечаем за качество</p>
+                <p class="offres-item__description">Наша компания занимается изготовлением мебели много лет, мы отвечаем за качество</p>
             </li>
             <li class="offres-item">
                 <svg class="offres-item__icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">

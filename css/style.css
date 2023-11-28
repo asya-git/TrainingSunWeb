@@ -26,7 +26,7 @@
 
 /* HEADER------------------------------------------------------------ */
 .header {
-    min-width: 1440px;
+    min-width: 100%;
     padding: 26px 0 26px 0;
     background-color: #1A1A1A;
     opacity: 65%;
@@ -37,6 +37,10 @@
     top: 0;
 
     align-items: center;
+}
+
+.header_burger-button {
+    display: none;
 }
 
 /* LOGO----------------------------------------------------------- */
@@ -75,6 +79,7 @@
 .menu_link:hover {
     text-decoration: underline;
     font-weight: 400;
+    color: #F79C1B;
 }
 
 /* КОНТАКТЫ-------------------------------------------------------- */
@@ -116,6 +121,7 @@
 }
 .header__phone:hover {
     text-decoration: underline;
+    color: #F79C1B;
 }
 
 /* ЗАЯВКА------------------------------------------------------------ */
@@ -194,7 +200,7 @@
 
 /* MAIN-------------------------------------------------------------- */
 .main {
-    min-width: 1440px;
+    min-width: 100%;
 }
 
 /* ПРИМЕРЫ----------------------------------------------------------- */
@@ -265,9 +271,11 @@
     transition: 1.3s;
 }
 
+
 .item__img:hover {
     transform: scale(103%);
 }
+
 
 /* ФОРМА------------------------------------------------------- */
 
@@ -353,6 +361,11 @@
 .info-item__img {
     min-width: 50%;
     height: auto;
+
+    transition: 1.3s;
+}
+.info-item__img:hover {
+    transform: scale(103%);
 }
 
 .wrapper-info-text {
@@ -389,7 +402,7 @@
     width: 230px;
 }
 
-/* FOOTER */
+/* FOOTER---------------------------------------------------------- */
 .footer {
     padding: 160px 0 160px 0;
     display: flex;
@@ -445,5 +458,210 @@
     line-height: 26px;
 
     color: #1A1A1A;
+}
+
+@media(min-width: 320px) and (max-width: 1439px) {
+    .body {
+        min-width: 320px;
+    }
+    /* HEADER */
+    .wrapper-background {
+        background-color: #000;
+        opacity: 0.7;
+    }
+    .header {
+        background-color: transparent;
+        padding: 0;
+    }
+    .header__nav {display: none;}
+    .header__contacts {display: none;}
+    .header__logo {
+        margin: 13px auto 0 10px;
+    }
+    .header__logo {
+        width: 113px;
+    }
+    .header__text {
+        font-size: 8px;
+    }
+
+    .header_burger-button {
+        display: block;
+        margin: 0 10px 0 auto;
+        
+    }
+    /* ЗАЯВКА----------------------------------------------------------- */
+
+    .wrapper-application {
+        width: 100%;
+    }
+    .application {
+        width: 100%;
+        padding: 0;
+        background-color: transparent;
+
+        text-align: center;
+    }
+    .application__title {
+        font-size: 20px;
+        line-height: 26px;
+
+        color: #F6F6F6;
+    }
+    .application__description {
+        font-size: 12px;
+        line-height: 18px;
+
+        color: #F6F6F6;
+    }
+    .application__info {
+        font-size: 10px;
+
+        color: #F6F6F6;
+    }
+
+    /* ПРИМЕРЫ------------------------------------------------------------- */
+    .examples {
+        padding-top: 60px;
+
+        gap: 24px;
+    }
+    .examples__title {
+        font-size: 18px;
+    }
+    .examples-items {
+        flex-direction: column;
+    }
+    .item {
+        width: 300px;
+    }
+    .item__title {
+        margin-top: 18px;
+        font-size: 14px;
+    }
+    .item_width-300px {
+        width: 300px;
+    }
+    .item__img {
+        object-fit: cover;
+        height: 191px;
+        width: 100%;
+    }
+
+    /* ФОРМА-------------------------------------------------------------- */
+    .wrapper-form {
+        margin-top: 60px;
+        padding: 60px 0 60px 0;
+        gap: 24px;
+    }
+    .wrapper-form-text {
+        width: 200px;
+    }
+    .wrapper-form__title {
+        font-size: 18px;
+    }
+    .wrapper-form__text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .form {
+        gap: 12px;
+        flex-direction: column;
+    }
+    .form__input {
+        width: auto;
+    }
+    
+    /* ИНФО----------------------------------------------------------------- */
+    
+    .info-item_background-img1 {
+        background-image: url("../img/info/about-kitchens.png");
+    }
+    .info-item_background-img2 {
+        background-image: url("../img/info/about-kitchens.png");
+    }
+    .info-item_background-img3 {
+        background-image: url("../img/info/about-kitchens.png");
+    }
+    
+    .info-item__img {
+        display: none;
+    }
+    .wrapper-info-text {
+        background-color: transparent;
+        width: 100%;
+        align-items: center;
+
+        background-color: #000;
+        opacity: 0.8;
+
+        text-align: center;
+
+        padding: 60px 0 130px 0;
+    }
+    .wrapper-info-text_backround-white {
+        background-color: #FFF;
+    }
+    .info-item__title {
+        min-width: 80px;
+        margin-bottom: 12px;
+        font-size: 18px;
+
+        color: #F6F6F6;
+    }
+    .info-item__title_color-black {
+        color: #1A1A1A;
+    }
+
+    .info-item__discription {
+        margin: 0 5%;
+
+        font-size: 12px;
+        color: #F6F6F6;
+    }
+    .info-item__discription_color-black {
+        color: #1A1A1A;
+    }
+
+    .info-item__button {
+        margin-top: 30px;
+    }
+
+    /* FOOTER---------------------------------------------- */
+
+    .footer {
+        padding: 60px 0;
+        gap: 56px;
+    }
+
+    .footer_title {
+        font-size: 18px;
+    }
+
+    .offres-items {
+        flex-direction: column;
+    }
+
+    .offres-item {
+        width: 100%;
+
+        align-items: center;
+        text-align: center;
+    }
+    .offres-item__icon {
+        width: 40px;
+
+        margin-bottom: 20px;
+    }
+    .offres-item__title {
+        font-size: 14px;
+    }
+    .offres-item__description {
+        font-size: 12px;
+        line-height: 18px;
+
+        margin: 0 12%;
+    }
 }
 
