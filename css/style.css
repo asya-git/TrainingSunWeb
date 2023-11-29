@@ -145,17 +145,250 @@
     color: #FFF;
 }
 .intro__button {
-    transition: 1.5s;
+    
     margin: 0 41% 8%;
+}
 
+.main {
+    min-width: 1440px;
+}
+
+/* PRODUCTS------------------------------------- */
+.products {
+
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+.products_pt-80px {
+    padding-top: 80px;
+}
+.products_pt-160px {
+    padding-top: 160px;
+}
+.products__title {
+    text-align: center;
+}
+.title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: #1A1A1A;
+}
+.products__list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    margin: 0 5% 0 5%;
+    justify-content: center;
+
+}
+/* .products__item {
+
+} */
+.products-item {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.products-item_big {
+    width: 560px;
+}
+.products-item__img-wrapper {
+    overflow: hidden;
+}
+.products-item__img {
+    margin-bottom: 30px;
+    transition: 1.3s;
+}
+.products-item__img:hover {
+    transform: scale(105%);
+}
+
+.products-item__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1A1A1A;
+}
+.products-item__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1A1A1A;
+}
+
+/* ФОРМА------------------------------------------------- */
+.main__wrapper-form {
+    margin-top: 160px;
+}
+
+.wrapper-form {
+    padding: 160px 0 160px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #EBEBEB;
+}
+/* .wrapper-form__title {
+
+} */
+.wrapper-form__description {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+
+    width: 440px;
+    margin-bottom: 22px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.form__input {
+    width: 260px;
+    padding: 8px 0 8px 30px;
+
+    border: 1px solid #F79C1B;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #1A1A1A;
+}
+/* .form__button {
+    
+} */
+
+.button {
+    transition: 1.5s;
+    
     background-color: #F79C1B;
     border: 1px #F79C1B solid;
     padding: 10px 51px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
+}
+.button:hover {
+    color: #F79C1B;
+    background-color: #FFF;
+
+}
+
+/* SERVICES---------------------------------------------------------------------- */
+.main__services {
+    margin-top: 160px;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+}
+.services_flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+.services__picture {
+    width: 50%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__picture_about {
+    background-image: url("../img/info/about-kitchens.png");
+}
+.services__picture_delivery {
+    background-image: url("../img/info/delivery.png");
+}
+.services__picture_production {
+    background-image: url("../img/info/production.png");
+}
+.services__content {
+    padding: 13% 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    background-color: #EBEBEB;;
+}
+.services__title {
+    margin: 0 auto 5% 25%;;
+}
+.services__discription {
+    margin: 0 17% 0 25%;
 
     font-family: 'Rubik', sans-serif;
     font-style: normal;
-    font-weight: 500; 
+    font-weight: 300;
     font-size: 16px;
+    line-height: 26px;
+    color: #1A1A1A;
+}
+.services__button {
+    margin: 5% auto 0 25%;
 
-    color: #FFF;
+    padding: 8px 0;
+    width: 230px;
+}
+
+/* OFFER------------------------------------------------ */
+.main__offer {
+    margin-top: 10%;
+}
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 140px;
+}
+.offer__list {
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    flex-wrap: wrap;
+
+    padding: 0 8% 24% 8%;
+}
+.offer-item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.offer-item__icon {
+    margin-bottom: 4%;
+}
+.offer-item__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1A1A1A;
+}
+.offer-item__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1A1A1A;
 }
