@@ -47,16 +47,18 @@
     color: #F6F6F6;
 }
 /* НАВИГАЦИЯ----------------------------------------------- */
+
+
 .header__nav {
     margin: 0 auto 0 40px;
 }
-.header__menu-list {
+.nav__menu-list {
     display: flex;
     flex-direction: row;
 
     gap: 30px;
 }
-.header__menu-link {
+.nav__menu-link {
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -87,7 +89,7 @@
     color: #F79C1B;
 }
 
-.header__menu-link:hover {
+.nav__menu-link:hover {
     text-decoration: underline;
     font-weight: 400;
     color: #F79C1B;
@@ -189,27 +191,27 @@
 /* .products__item {
 
 } */
-.products-item {
+.product {
     display: flex;
     flex-direction: column;
     width: 360px;
 }
 
-.products-item_big {
+.product_big {
     width: 560px;
 }
-.products-item__img-wrapper {
+.product__img-wrapper {
     overflow: hidden;
 }
-.products-item__img {
+.product__img {
     margin-bottom: 30px;
     transition: 1.3s;
 }
-.products-item__img:hover {
+.product__img:hover {
     transform: scale(105%);
 }
 
-.products-item__title {
+.product__title {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -217,7 +219,7 @@
     line-height: 26px;
     color: #1A1A1A;
 }
-.products-item__description {
+.product__description {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -350,18 +352,18 @@
     width: 230px;
 }
 
-/* OFFER------------------------------------------------ */
-.main__offer {
+/* offers------------------------------------------------ */
+.main__offers {
     margin-top: 10%;
 }
-.offer {
+.offers {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     gap: 140px;
 }
-.offer__list {
+.offers__list {
     display: flex;
     flex-direction: row;
     gap: 40%;
@@ -369,22 +371,22 @@
 
     padding: 0 8% 24% 8%;
 }
-.offer-item {
+.offer {
     width: 30%;
     display: flex;
     flex-direction: column;
 }
-.offer-item__icon {
+.offer__icon {
     margin-bottom: 4%;
 }
-.offer-item__title {
+.offer__title {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     color: #1A1A1A;
 }
-.offer-item__description {
+.offer__description {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 300;
