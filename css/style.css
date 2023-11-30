@@ -1,0 +1,579 @@
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: local('RF Dewi Bold'), local('RF-Dewi-Bold'),
+        url('../fonts/RFDewi-Bold.woff2') format('woff2'),
+        url('../fonts/RFDewi-Bold.woff') format('woff'),
+        url('../fonts/RFDewi-Bold.eot') format('eot');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+     font-family: 'RF Dewi';
+    src: local('RF Dewi Expanded Black'), local('RF-Dewi-Regular'),
+        url('../fonts/RFDewi-Regular.woff2') format('woff2'),
+        url('../fonts/RFDewi-Regular.woff') format('woff'),
+        url('../fonts/RFDewi-Regular.eot') format('eot');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'RF Dewi Expanded';
+    src: local('RF Dewi Black'), local('RF-Dewi-Expanded-Black'),
+        url('../fonts/RFDewiExpanded-Black.woff2') format('woff2'),
+        url('../fonts/RFDewiExpanded-Black.woff') format('woff'),
+        url('../fonts/RFDewiExpanded-Black.eot') format('eot');
+    font-weight: 800;
+    font-style: normal; 
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+/* <----- HEADER--------------- */
+.header {
+    position: sticky;
+    top: 0;
+
+    min-width: 390px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: #fff;
+
+    z-index: 1000;
+}
+
+/* <- 1600px */
+.header-panel {
+    display: none;
+}
+.header-nav {
+    display: none;
+}
+/* 1600px -> */
+
+
+.text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "RF Dewi", sans-serif;
+}
+
+
+.connection {
+    display: flex;
+    flex-direction: row;
+
+    gap: 16px;
+}
+.connection_marg-8-16 {
+    margin: 8px 16px;
+}
+.connection__logo {
+    width: 34px;
+    height: 34px;
+}
+.connection__button-request {
+    border: 2px #000 solid;
+    width: 158px;
+    height: 34px;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    font-family: "RF Dewi", sans-serif;
+
+    
+}
+.connection__button-call {
+    border: 2px #E63E35 solid;
+    width: 34px;
+    height: 34px;
+
+    color: #E63E35;
+}
+.connection__img {
+    width: 18px;
+    height: 18px;
+}
+
+/* <--- МЕНЮ------- */
+.burger-button {
+
+    width: 34px;
+    height: 34px;
+    border: 2px #B8B8B8 solid;
+}
+.burger-button_marg-8-16 {
+    margin: 8px 16px;
+}
+.burger-img {
+    width: 18px;
+    height: 12px;
+}
+
+/* <-----  MAIN ---------------------- */
+.main {
+    min-width: 390px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+
+.section {
+    padding: 32px 0;
+}
+.section_background-color-black {
+    background-color: #161515;
+}
+
+.margin-0-16 {
+    margin: 0 16px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.contacts__h1 {
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 40.8px;
+    color: #FBFBFB;
+    font-family: "RF Dewi Expanded", sans-serif;
+}
+
+.office {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.office__h5 {
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #5D5D5D;
+    font-weight: 800;
+    font-family: "RF Dewi Expanded", sans-serif;
+
+}
+.office__list {
+    list-style-type: none;
+}
+.office__item {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-family: "RF Dewi", sans-serif;
+}
+.office__a {
+    color: #E63E35;
+}
+
+.icons {
+    display: flex;
+    gap: 16px;
+}
+
+.employees {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.employee {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.employee__h2 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #161515;
+    font-weight: 800;
+    font-family: "RF Dewi Expanded", sans-serif;
+    text-transform: uppercase;
+
+}
+.employee__list {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+.employee-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.employee__item {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 32px;
+}
+.employee__description {
+    width: 176px;
+    text-align: justify;
+}
+.employee__name {
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #000;
+    font-weight: 800;
+    font-family: "RF Dewi Expanded", sans-serif;
+}
+.employee__post {
+    font-size: 16px;
+    line-height: 24px;
+    color: #E63E35;
+    font-weight: 400;
+    font-family: "RF Dewi", sans-serif;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.description__h5 {
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #5D5D5D;
+    font-weight: 800;
+    font-family: "RF Dewi Expanded", sans-serif;
+}
+.description__text {
+    color: #5D5D5D;
+}
+
+/* <---------FOOTER-----------------------*/
+.footer{
+    padding: 32px 0 62px 0;
+    background-color: #161515;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.footer-info {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.form-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.form-text__h2 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-family: "RF Dewi Expanded", sans-serif;
+    text-transform: uppercase;
+}
+.form-text__text {
+    color: #FFFFFF;
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-input-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.form-input__input {
+    padding: 0 16px;
+
+    border: 2px #B8B8B8 solid;
+    background-color: #FFF;
+    height: 34px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #5D5D5D;
+    font-weight: 400;
+    font-family: "RF Dewi", sans-serif;
+}
+.form__button {
+    width: 100%;
+    background-color: #B8B8B8;
+    height: 36px;
+
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "RF Dewi", sans-serif;
+
+}
+.form__conditions-text {
+    line-height: 16.8px;
+    font-size: 14px;
+    color: #5D5D5D;
+}
+.form__conditions-a {
+    color: #E63E35;
+}
+
+.footer-contacts__text {
+    text-align: right;
+    color: #5D5D5D;
+}
+.footer-contacts__text_red {
+    color: red;
+}
+
+
+/* <- 1600px ------------------------------------*/
+
+@media (min-width: 1600px) {
+
+    .connection { display: none;}
+    .burger-button { display: none;}
+    .header { 
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-panel {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-panel_marg-15-160 {
+        margin: 15px 160px 15px 160px;
+    }
+    .header-logo {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .header-logo__text {
+        font-size: 31.2px;
+        line-height: 37.44px;
+        color: #2C2B2E;
+        font-weight: 800;
+        font-family: "RF Dewi Expanded", sans-serif;
+        text-transform: uppercase;
+    }
+    .header-contacts {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+    .header-contacts__button {
+        border: 2px #000000 solid;
+        padding: 16px;
+
+        color: #000000;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+        font-family: "RF Dewi", sans-serif;
+    }
+
+    .header-number {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-number__number {
+        font-size: 24px;
+        line-height: 18.8px;
+        color: #E63E35;
+        font-weight: 800;
+        font-family: "RF Dewi Expanded", sans-serif;
+        text-transform: uppercase;
+    }
+    .header-number__text {
+        color: #000000;
+        font-size: 13px;
+        line-height: 15.6px;
+        font-weight: 400;
+        font-family: "RF Dewi", sans-serif;
+        text-align: right;
+
+    }
+
+    /* <--- НАВИГАЦИЯ */
+
+    .header-nav {
+        width: 100%;
+        display: flex;
+        background-color: #161515;
+        justify-content: right;
+        border: 1px #161515 solid;
+        padding: 26px 0 26px 0;
+    }
+    .header-list {
+        display: flex;
+        gap: 42px;
+        list-style-type: none;
+        margin-right: 160px;
+    }
+    .header-list__a {
+        padding: 16px;
+        color: #B8B8B8;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+        font-family: "RF Dewi", sans-serif;
+        text-transform: uppercase;
+    }
+
+    /* <--- MAIN */
+    .main {
+        min-width: 1600px;
+    }
+
+    .about-us {
+        max-height: 973px;
+        display: flex;
+        flex-direction: row;
+        overflow-y: auto;
+    }
+
+    .section_background-color-black {
+        display: flex;
+        justify-content: end;
+
+        position: sticky;
+        top: 0;
+
+        width: 600px;
+    }
+
+    .margin-0-64 {
+        margin: 0 64px 0 0;
+    }
+
+    .employee__list {
+        display: flex;
+        flex-direction: column;
+    }
+    .employee-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .info_marg-l-151-r-170 {
+        margin-left:151px;
+        margin-right:170px;
+    }
+    .info_padding-60 {
+        padding: 60px;
+    }
+
+    /* <--- footer -----------------------------------*/
+
+    .footer-info {
+        margin: 102px 160px 0 160px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .form {
+        width: 623px;
+    }
+    .form-input {
+        display: flex;
+        gap: 15px
+    }
+    .form-input-groups {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .form-input-groups > .form-input__input {
+        width: 304px;
+    }
+    .form-input__input {
+        padding: 0 24px;
+        height: 48px;
+    }
+    .form-input__textarea::placeholder {
+        padding-top: 10px;
+    }
+    .form__button {
+        height: 48px;
+    }
+
+    .footer-contacts {
+        margin: auto 0 0 auto;
+    }
+
+    /* <---Псевдоклассы ---------------------------- */
+
+    .header-contacts__button:hover {
+        background-color: #000;
+        color: #FFF;
+    }
+    .header-list__a:hover {
+        color: #FFF;
+        outline: 2px #FFF solid;
+    }
+    .form-input__input:hover {
+        outline: 2px solid var(--Dark-Grey, #5D5D5D);
+        outline-offset: -1px;
+    }
+    .form-input__input:hover::placeholder {
+        color: var(--Black, #000);
+    }
+
+    .form-input__textarea:hover::placeholder {
+        color: var(--Black, #000);
+    }
+    .form-input__textarea:hover {
+        outline: 2px solid var(--Dark-Grey, #5D5D5D); /* Ширина, вид и цвет рамки */
+        outline-offset: -1px; /* Выводим рамку внутри элемента */
+    }
+    .icons__a:hover svg path {
+        fill: var(--Red, #E63E35);
+        transition: fill 0.3s ease-in-out;
+    }
+}
+/* 1600px -> */
