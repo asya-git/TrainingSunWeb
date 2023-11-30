@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: rgb(205, 231, 223);
+    text-align: center;
+    padding: 5px;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.fibonacci {
+    margin: 10px;
+}
+
+.fibonacci__input {
+    border: 1px rgb(59, 59, 59) solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.fibonacci__p--red {
+    color: rgb(133, 54, 54);
+    /* font-size: ; */
+}
+
+.fibonacci__ul {
+    list-style-type: none;
+}
+
+.fibonacci__li--blue {
+    color: rgb(66, 66, 150);
+}
+
+
+.fibonacci__li--red {
+    color: rgb(177, 87, 87);
+}
+
+/* .fibonacci__input--green {
+    border: 1px rgb(63, 107, 63) solid;
+    border-radius: 5px;
+    margin: 10px;
+} */
