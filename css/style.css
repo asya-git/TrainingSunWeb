@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600&display=swap');
+
+* {
+    outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    list-style-type: none;
+}
+
+
+
+.intro {
+    min-width: 1440px;
+    background-size: cover;
+    background-image: url("../img/background.png");
+}
+.intro__header {
+    padding: 0 5%;
+}
+/* HEADER----------------------------------------------- */
+.header {
+    display: flex;
+    flex-direction: row;
+
+    background-color: #1A1A1A;
+    opacity: 65%;
+
+    align-items: center;
+}
+/* ЛОГО-------------------------------------------------- */
+.header__logo {
+    display: flex;
+    flex-direction: column;
+
+    padding: 26px;
+}
+.header__text {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 12px;
+
+    color: #F6F6F6;
+}
+/* НАВИГАЦИЯ----------------------------------------------- */
+
+
+.header__nav {
+    margin: 0 auto 0 40px;
+}
+.nav__menu-list {
+    display: flex;
+    flex-direction: row;
+
+    gap: 30px;
+}
+.nav__menu-link {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+
+    color: #FFF;
+}
+.header__phone {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 16px;
+
+    color: #FFF;
+}
+.header__button {
+    margin-left: 40px;
+    padding: 10px 25px;
+
+    transition: 1.5s;
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 12px;
+
+    border: 1px #F79C1B solid;
+    color: #F79C1B;
+}
+
+.nav__menu-link:hover {
+    text-decoration: underline;
+    font-weight: 400;
+    color: #F79C1B;
+}
+.header__phone:hover {
+    text-decoration: underline;
+    color: #F79C1B;
+}
+.header__button:hover {
+    color: #FFF;
+    background-color: #F79C1B;
+}
+
+/* БАННЕР-------------------------------------------------- */
+.intro__banner {
+    margin: 8% 25%;
+
+}
+.banner {
+    min-width: 696px;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: rgba(26, 26, 26, 0.65);
+}
+.banner__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600; 
+    font-size: 46px;
+
+    color: #FFF;
+    text-align: center;
+}
+.banner__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 20px;
+
+    color: #FFF;
+}
+.banner__subdescription {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 18px;
+
+    color: #FFF;
+}
+.intro__button {
+    
+    margin: 0 41% 8%;
+}
+
+.main {
+    min-width: 1440px;
+}
+
+/* PRODUCTS------------------------------------- */
+.products {
+
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+.products_pt-80px {
+    padding-top: 80px;
+}
+.products_pt-160px {
+    padding-top: 160px;
+}
+.products__title {
+    text-align: center;
+}
+.title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: #1A1A1A;
+}
+.products__list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    margin: 0 5% 0 5%;
+    justify-content: center;
+
+}
+/* .products__item {
+
+} */
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.product_big {
+    width: 560px;
+}
+.product__img-wrapper {
+    overflow: hidden;
+}
+.product__img {
+    margin-bottom: 30px;
+    transition: 1.3s;
+}
+.product__img:hover {
+    transform: scale(105%);
+}
+
+.product__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1A1A1A;
+}
+.product__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1A1A1A;
+}
+
+/* ФОРМА------------------------------------------------- */
+.main__wrapper-form {
+    margin-top: 160px;
+}
+
+.wrapper-form {
+    padding: 160px 0 160px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #EBEBEB;
+}
+/* .wrapper-form__title {
+
+} */
+.wrapper-form__description {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+
+    width: 440px;
+    margin-bottom: 22px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.form__input {
+    width: 260px;
+    padding: 8px 0 8px 30px;
+
+    border: 1px solid #F79C1B;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #1A1A1A;
+}
+/* .form__button {
+    
+} */
+
+.button {
+    transition: 1.5s;
+    
+    background-color: #F79C1B;
+    border: 1px #F79C1B solid;
+    padding: 10px 51px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
+}
+.button:hover {
+    color: #F79C1B;
+    background-color: #FFF;
+
+}
+
+/* SERVICES---------------------------------------------------------------------- */
+.main__services {
+    margin-top: 160px;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+}
+.services_flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+.services__picture {
+    width: 50%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services__picture_about {
+    background-image: url("../img/info/about-kitchens.png");
+}
+.services__picture_delivery {
+    background-image: url("../img/info/delivery.png");
+}
+.services__picture_production {
+    background-image: url("../img/info/production.png");
+}
+.services__content {
+    padding: 13% 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    background-color: #EBEBEB;;
+}
+.services__title {
+    margin: 0 auto 5% 25%;;
+}
+.services__discription {
+    margin: 0 17% 0 25%;
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1A1A1A;
+}
+.services__button {
+    margin: 5% auto 0 25%;
+
+    padding: 8px 0;
+    width: 230px;
+}
+
+/* offers------------------------------------------------ */
+.main__offers {
+    margin-top: 10%;
+}
+.offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 140px;
+}
+.offers__list {
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    flex-wrap: wrap;
+
+    padding: 0 8% 24% 8%;
+}
+.offer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.offer__icon {
+    margin-bottom: 4%;
+}
+.offer__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1A1A1A;
+}
+.offer__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1A1A1A;
+}
