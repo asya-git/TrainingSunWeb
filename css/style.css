@@ -1,0 +1,672 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600&display=swap');
+
+
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    list-style-type: none;
+}
+
+.body {
+    min-width: 1440px
+}
+
+.header-wrapper {
+    width: 100%;
+
+    background-image: url("../img/background.png");
+}
+
+/* HEADER------------------------------------------------------------ */
+.header {
+    min-width: 100%;
+    padding: 26px 0 26px 0;
+    background-color: #1A1A1A;
+    opacity: 65%;
+
+    display: flex;
+    font-display: row;
+
+    align-items: center;
+}
+
+.header_burger-button {
+    display: none;
+}
+
+/* LOGO----------------------------------------------------------- */
+.header__logo {
+    margin-left: 140px;
+}
+.header__text {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 12px;
+
+    color: #F6F6F6;
+    opacity: 50%;
+}
+
+/* НАВИГАЦИЯ------------------------------------------------------- */
+.header__nav {
+    margin-left: 40px;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.menu_link {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+
+    color: #FFF;
+}
+
+.menu_link:hover {
+    text-decoration: underline;
+    font-weight: 400;
+    color: #F79C1B;
+}
+
+/* КОНТАКТЫ-------------------------------------------------------- */
+.header__contacts {
+    margin: 0 140px 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+}
+.header__phone {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 16px;
+
+    color: #FFF;
+}
+.header__button {
+    transition: 1.5s;
+
+    width: 160px;
+    height: 32px;
+    
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 12px;
+
+    border: 1px #F79C1B solid;
+    color: #F79C1B;
+}
+
+.header__button:hover {
+    color: #FFF;
+    background-color: #F79C1B;
+}
+.header__phone:hover {
+    text-decoration: underline;
+    color: #F79C1B;
+}
+
+/* ЗАЯВКА------------------------------------------------------------ */
+.wrapper-application {
+    width: 100%;
+    height: 613px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 47px;
+}
+
+.application {
+    padding: 32px;
+    width: 696px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: rgba(26, 26, 26, 0.65);
+
+}
+.application__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600; 
+    font-size: 46px;
+
+    color: #FFF;
+
+    text-align: center;
+}
+.application__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 20px;
+
+    color: #FFF;
+}
+.application__info {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 18px;
+
+    color: #FFF;
+}
+
+.button {
+    transition: 1.5s;
+
+    background-color: #F79C1B;
+    border: 1px #F79C1B solid;
+    padding: 10px 51px;
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 16px;
+
+    color: #FFF;
+}
+.button:hover {
+    color: #F79C1B;
+    background-color: #FFF;
+
+}
+
+/* MAIN-------------------------------------------------------------- */
+.main {
+    min-width: 100%;
+}
+
+/* ПРИМЕРЫ----------------------------------------------------------- */
+.examples {
+    padding-top: 160px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 88px;
+}
+.examples_padding-t-80px {
+    padding-top: 80px;
+}
+.examples_padding-b-160px {
+    padding-bottom: 160px;
+}
+.examples__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 40px;
+
+    color: #1A1A1A;
+}
+.examples-items {
+    flex-wrap: wrap;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.item {
+    width: 360px;
+}
+.item_width-560px {
+    width: 560px;
+}
+.item__title {
+    margin-top: 30px;
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #1A1A1A;
+}
+.item__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #1A1A1A;
+}
+
+.wrapper-img {
+    overflow: hidden;
+}
+
+.item__img {
+    transition: 1.3s;
+}
+
+
+.item__img:hover {
+    transform: scale(105%);
+}
+
+
+/* ФОРМА------------------------------------------------------- */
+
+.wrapper-form {
+    margin-top: 160px;
+    padding: 160px 0 160px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    gap: 32px;
+
+    background-color: #EBEBEB;
+}
+.wrapper-form-text {
+    width: 440px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+.wrapper-form__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 40px;
+
+    color: #1A1A1A;
+}
+.wrapper-form__text {
+    text-align: center;
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+
+    gap: 15px;
+}
+
+.form__input {
+    width: 260px;
+    padding: 8px 0 8px 30px;
+
+    border: 1px solid #F79C1B; 
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 16px;
+
+    color: #1A1A1A;
+}
+.form__input::placeholder {
+    color: rgba(26, 26, 26, 0.50);
+}
+
+/* ИНФО-БЛОК-------------------------------------------------------- */
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.info-item {
+    display: flex;
+    flex-direction: row;
+}
+.info-item_flex-direction-row-rev {
+    flex-direction: row-reverse;
+}
+.wrapper-info-text {
+    background-color: #EBEBEB;
+}
+.info-item__img {
+    min-width: 50%;
+    height: auto;
+
+    transition: 1.3s;
+}
+.info-item__img:hover {
+    transform: scale(103%);
+}
+
+.wrapper-info-text {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info-item__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 40px;
+
+    margin: 0 180px 32px 180px;
+
+    color: #1A1A1A;
+}
+.info-item__discription {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 16px;
+    line-height: 26px;
+
+    margin: 0 180px 0 180px;
+
+    color: #1A1A1A;
+}
+.info-item__button {
+    padding: 8px 0;
+    margin: 50px 180px 0 180px;
+    width: 230px;
+}
+
+/* FOOTER---------------------------------------------------------- */
+.footer {
+    padding: 160px 0 160px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 140px;
+}
+.footer_title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 40px;
+
+    color: #1A1A1A;
+}
+
+.offres-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    /* align-items: center; */
+}
+.offres-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    width: 30%;
+
+}
+.offres-item__icon {
+    margin-bottom: 24px;
+
+    width: 60px;
+    height: 60px;
+}
+.offres-item__title {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 24px;
+
+    color: #1A1A1A;
+}
+.offres-item__description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #1A1A1A;
+}
+
+@media(min-width: 320px) and (max-width: 1439px) {
+    .body {
+        min-width: 320px;
+    }
+    /* HEADER */
+    .wrapper-background {
+        background-color: #000;
+        opacity: 0.7;
+    }
+    .header {
+        background-color: transparent;
+        padding: 0;
+    }
+    .header__nav {display: none;}
+    .header__contacts {display: none;}
+    .header__logo {
+        margin: 13px auto 0 10px;
+    }
+    .header__logo {
+        width: 113px;
+    }
+    .header__text {
+        font-size: 8px;
+    }
+
+    .header_burger-button {
+        display: block;
+        margin: 0 10px 0 auto;
+        
+    }
+    /* ЗАЯВКА----------------------------------------------------------- */
+
+    .wrapper-application {
+        width: 100%;
+        height: 428px;
+    }
+    .application {
+        width: 100%;
+        padding: 0;
+        background-color: transparent;
+
+        text-align: center;
+    }
+    .application__title {
+        font-size: 20px;
+        line-height: 26px;
+
+        color: #F6F6F6;
+    }
+    .application__description {
+        font-size: 12px;
+        line-height: 18px;
+
+        color: #F6F6F6;
+    }
+    .application__info {
+        font-size: 10px;
+
+        color: #F6F6F6;
+    }
+
+    /* ПРИМЕРЫ------------------------------------------------------------- */
+    .examples {
+        padding-top: 60px;
+
+        gap: 24px;
+    }
+    .examples__title {
+        font-size: 18px;
+    }
+    .examples-items {
+        flex-direction: column;
+    }
+    .item {
+        width: 300px;
+    }
+    .item__title {
+        margin-top: 18px;
+        font-size: 14px;
+    }
+    .item_width-300px {
+        width: 300px;
+    }
+    .item__img {
+        object-fit: cover;
+        height: 191px;
+        width: 100%;
+    }
+
+    /* ФОРМА-------------------------------------------------------------- */
+    .wrapper-form {
+        margin-top: 60px;
+        padding: 60px 0 60px 0;
+        gap: 24px;
+    }
+    .wrapper-form-text {
+        width: 200px;
+    }
+    .wrapper-form__title {
+        font-size: 18px;
+    }
+    .wrapper-form__text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .form {
+        gap: 12px;
+        flex-direction: column;
+    }
+    .form__input {
+        width: auto;
+
+        margin: 0 5% 0 5%;
+    }
+
+    .form_button {
+        margin: 0 5% 0 5%;
+    }
+    
+    /* ИНФО----------------------------------------------------------------- */
+    
+    .info-item_background-img1 {
+        background-image: url("../img/info/about-kitchens.png");
+    }
+    .info-item_background-img2 {
+        background-image: url("../img/info/about-kitchens.png");
+    }
+    .info-item_background-img3 {
+        background-image: url("../img/info/about-kitchens.png");
+    }
+    
+    .info-item__img {
+        display: none;
+    }
+    .wrapper-info-text {
+        background-color: transparent;
+        width: 100%;
+        align-items: center;
+
+        background-color: #000;
+        opacity: 0.8;
+
+        text-align: center;
+
+        padding: 60px 0 130px 0;
+    }
+    .wrapper-info-text_backround-white {
+        background-color: #FFF;
+    }
+    .info-item__title {
+        min-width: 80px;
+        margin-bottom: 12px;
+        font-size: 18px;
+
+        color: #F6F6F6;
+    }
+    .info-item__title_color-black {
+        color: #1A1A1A;
+    }
+
+    .info-item__discription {
+        margin: 0 5%;
+
+        font-size: 12px;
+        color: #F6F6F6;
+    }
+    .info-item__discription_color-black {
+        color: #1A1A1A;
+    }
+
+    .info-item__button {
+        margin-top: 30px;
+    }
+
+    /* FOOTER---------------------------------------------- */
+
+    .footer {
+        padding: 60px 0;
+        gap: 56px;
+    }
+
+    .footer_title {
+        font-size: 18px;
+    }
+
+    .offres-items {
+        flex-direction: column;
+        gap: 56px;
+    }
+
+    .offres-item {
+        width: 100%;
+
+        align-items: center;
+        text-align: center;
+    }
+    .offres-item__icon {
+        width: 40px;
+
+        margin-bottom: 20px;
+    }
+    .offres-item__title {
+        font-size: 14px;
+    }
+    .offres-item__description {
+        font-size: 12px;
+        line-height: 18px;
+
+        margin: 0 12%;
+    }
+}
+
